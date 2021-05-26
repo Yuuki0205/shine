@@ -1,0 +1,58 @@
+.top{
+  font-size: 70px;
+ color: gold;
+ text-align: center;
+}
+.spend{
+  font-size: 30px;
+  background-color: lightblue;
+}
+.up{
+  margin-top: 10px;
+  text-align: center;
+  
+}
+.play-one{
+  margin: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+.play-two{
+margin: 30px;
+text-align: center;
+font-style: italic;
+font-size: 20px;
+}
+.play-three{
+  margin: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+.play-four{
+  margin: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+.play-five{
+  margin: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+.play-six{
+  margin: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+.play-seven{
+  margin: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+.play-btn-text{
+  text-align: center;
+  
+}
+

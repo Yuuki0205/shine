@@ -1,0 +1,20 @@
+<%= render "shared/header" %>
+<h1 class='top'>目標管理ツール!!</h1>
+<div class="up">
+<p class="spend">何となく毎日を過ごしていませんか？</p>
+<ul>
+<li class='play-one'>やってみたいことはありますか?</li>
+<li class='play-two'>毎日ワクワクしてますか?
+<li class='play-three'>どんなに小さなことでも大丈夫!</li>
+<li class='play-four'>今から自分と向き合ってみましょう</li>
+<li class='play-five'>想像したら素敵な未来見えてきましたね!(決めつけ)(笑)</li>
+<li class='play-six'>思い浮かんだことを10個言語化してみましょう</li>
+<li class='play-seven'>1年以内に絞るとイメージが沸きやすいと思います!</li>
+</ul>
+</div> 
+<div class='play-btn-text'>
+<%= link_to(new_text_path, class: 'play-btn') do %>
+  <span class='play-text'>やってみる</span>
+<% end %>
+</div>
+<%#= render "shared/footer" %>
