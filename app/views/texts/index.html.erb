@@ -17,4 +17,42 @@
   <span class='play-text'>やってみる</span>
 <% end %>
 </div>
+
+<div class='item-contents'>
+    <h2 class='title'>目標リスト</h2>
+    <%= link_to '目標詳細', text_path(@texts.ids), class: "subtitle" %>
+    <ul class='item-lists'>
+
+      
+       <% @texts.each do |text| %>
+       
+      <li class='list'>
+         
+        <%#= link_to text_path(text.id) do %>
+        
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= text.one %>
+            <%= text.two %>
+            <%= text.three %>
+            <%= text.four %>
+            <%= text.five %>
+            <%= text.six %>
+            <%= text.seven %>
+            <%= text.eight %>
+            <%= text.nine %>
+            <%= text.ten %>
+          </h3>
+          
+        </div>
+        <%# end %>
+       
+      </li>
+      
+       <% end %>
+    
+     
+     
+    </ul>
+  </div>
 <%#= render "shared/footer" %>
