@@ -1,69 +1,73 @@
 
 <div class="text-show">
+<%= render "shared/header" %>
   <div class="text-box">
-    
     <% if user_signed_in? && @text.present? %>
     <% if current_user.id == @text.user_id %>
     <%# 30行目のコメントアウトは、違いを復習できるように残しておきます%>
     <%# if user_signed_in? && current_user.id == @item.user_id %>
-    <%= link_to "商品の編集",  edit_text_path(@text.id), method: :get, class: "text-red-btn" %>
+    <%= link_to "リストの編集",  edit_text_path(@text.id), method: :get, class: "text-red-btn" %>
     <p class="or-text">or</p>
     <%= link_to "削除", text_path(@text.id), method: :delete, class:"text-destroy" %>
  
     <% end %>
     <% end %>
+    
 
     
 
-    <div class="text-explain-box">
-      <span><%= @text.user.nickname %></span>
-    </div>
+    <%# <div class="text-explain-box">
+
+      <span><%= @text.user.nickname </span> %>
+    <%# </div> %> 
+   
     <table class="detail-table">
       <tbody>
-        
+       
         <tr>
-          <%# <th class="detail-item">カテゴリー</th> %>
+          <th class="detail-item">1</th>
           <td class="detail-value"><%= @text.one %></td>
         </tr>
         <tr>
-          <%# <th class="detail-item">商品の状態</th> %>
+          <th class="detail-item">2</th>
           <td class="detail-value"><%= @text.two %></td>
         </tr>
         <tr>
-          <%# <th class="detail-item">配送料の負担</th> %>
+          <th class="detail-item">3</th>
           <td class="detail-value"><%= @text.three %></td>
         </tr>
         <tr>
-          <%# <th class="detail-item">発送元の地域</th> %>
+          <th class="detail-item">4</th>
           <td class="detail-value"><%= @text.four %></td>
         </tr>
         <tr>
-          <%# <th class="detail-item">発送日の目安</th> %>
+          <th class="detail-item">5</th>
           <td class="detail-value"><%= @text.five %></td>
         </tr>
-        <tr>
-          <%# <th class="detail-item">発送日の目安</th> %>
+         <tr>
+          <th class="detail-item">6</th>
           <td class="detail-value"><%= @text.six %></td>
         </tr>
-        <tr>
-          <%# <th class="detail-item">発送日の目安</th> %>
+         <tr>
+          <th class="detail-item">7</th>
           <td class="detail-value"><%= @text.seven %></td>
         </tr>
-        <tr>
-          <%# <th class="detail-item">発送日の目安</th> %>
+         <tr>
+          <th class="detail-item">8</th>
           <td class="detail-value"><%= @text.eight %></td>
         </tr>
-        <tr>
-          <%# <th class="detail-item">発送日の目安</th> %>
+         <tr>
+          <th class="detail-item">9</th>
           <td class="detail-value"><%= @text.nine %></td>
         </tr>
-        <tr>
-          <%# <th class="detail-item">発送日の目安</th> %>
+         <tr>
+          <th class="detail-item">10</th>
           <td class="detail-value"><%= @text.ten %></td>
         </tr>
-
       </tbody>
     </table>
-    </div>
+    
+  <%= render "shared/footer" %>
+  </div>
   </div>
   

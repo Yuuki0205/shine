@@ -1,0 +1,32 @@
+.contents-row{
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+.text-sell-title {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.weight-bold-text {
+  text-align: center;
+}
+
+.new-text {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+.weight-text{
+  background-color: salmon;
+}
+.talent{
+  background-color: salmon;
+  margin-bottom: 40px;
+}
+
+.sell-btn{
+  padding: 10px;
+  color:white;
+  background-color: darkgrey;
+}

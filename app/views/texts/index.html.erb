@@ -1,58 +1,82 @@
+<div class='all-index'>
 <%= render "shared/header" %>
-<h1 class='top'>目標管理ツール!!</h1>
+<h1 class='top' id='target'>目標管理ツール!!</h1>
 <div class="up">
 <p class="spend">何となく毎日を過ごしていませんか？</p>
-<ul>
+
+<ul class='plays'>
+
 <li class='play-one'>やってみたいことはありますか?</li>
-<li class='play-two'>毎日ワクワクしてますか?
+<li class='play-two'>毎日ワクワクしてますか?</li>
 <li class='play-three'>どんなに小さなことでも大丈夫!</li>
 <li class='play-four'>今から自分と向き合ってみましょう</li>
 <li class='play-five'>想像したら素敵な未来見えてきましたね!(決めつけ)(笑)</li>
 <li class='play-six'>思い浮かんだことを10個言語化してみましょう</li>
-<li class='play-seven'>1年以内に絞るとイメージが沸きやすいと思います!</li>
+<li class='play-seven'>1年以内に絞るとイメージが湧きやすいと思います!</li>
+
 </ul>
 </div> 
 <div class='play-btn-text'>
 <%= link_to(new_text_path, class: 'play-btn') do %>
-  <span class='play-text'>やってみる</span>
+  <button type="submit" class='do-text'>やってみる</button>
 <% end %>
 </div>
 
 <div class='item-contents'>
-    <h2 class='title'>目標リスト</h2>
-    <%= link_to '目標詳細', text_path(@texts.ids), class: "subtitle" %>
-    <ul class='item-lists'>
-
+    <h2 class='title'><span style="color:gold">!</span>夢が詰まった目標リスト<span style="color:gold">!</span></h2>
+   
+    <ul class='text-lists'>
       
        <% @texts.each do |text| %>
-       
+        <%= link_to(text_path(text.id), class: "subtitle") do %>
+        <div class='goal'>
+        <button type="submit" class='play-text'>目標詳細</button>
+        <% end %>
+        <%# このやり方もある <%= link_to '目標詳細', text_path(text.id), class: "subtitle" %>
       <li class='list'>
          
         <%#= link_to text_path(text.id) do %>
         
-        <div class='item-info'>
-          <h3 class='item-name'>
+        <div class='text-info'>
+        
+          <div class="text-name">
             <%= text.one %>
+            </div>
+            <div class="text-name">
             <%= text.two %>
+            </div>
+             <div class="text-name">
             <%= text.three %>
+            </div>
+             <div class="text-name">
             <%= text.four %>
+            </div>
+             <div class="text-name">
             <%= text.five %>
+            </div>
+             <div class="text-name">
             <%= text.six %>
+            </div>
+             <div class="text-name">
             <%= text.seven %>
+            </div>
+             <div class="text-name">
             <%= text.eight %>
+            </div>
+             <div class="text-name">
             <%= text.nine %>
+            </div>
+             <div class="text-name">
             <%= text.ten %>
-          </h3>
-          
+            </div>
+            
         </div>
+        
         <%# end %>
-       
       </li>
-      
+      </div>
        <% end %>
-    
-     
-     
     </ul>
   </div>
-<%#= render "shared/footer" %>
+<%= render "shared/footer" %>
+</div>

@@ -1,4 +1,4 @@
-<div class="contents row">
+<div class="contents-row">
   <div class="container">
   <h2 class="text-sell-title">目標を10個入力やってみよう!😌</h2>
  <%= form_with model:@text, local: true do |f| %>
@@ -38,7 +38,7 @@
         </div>
         <%= f.text_field :five, class:"five-text", id:"five-name", placeholder:"" %>
       </div>
-      <div class="weight-bold-text">
+      <div class="weight-text">
           あと半分! その調子! 📣
        </div>
        <div class="new-text">
@@ -76,7 +76,7 @@
         </div>
         <%= f.text_field :ten, class:"ten-text", id:"ten-name", placeholder:"" %>
       </div>
-      <div class="weight-bold-text">
+      <div class="talent">
           やりきった! 天才だね! 😳
        </div>
        <div class="sell-btn-contents">
@@ -85,25 +85,7 @@
     </div>
        
     </div>
-
-
-
-
-
-
-    
-      <%#= f.text_field :one, placeholder: "" %>
-      <%#= f.text_field :two, placeholder: "" %>
-      <%#= f.text_field :three, placeholder: "" %>
-      <%#= f.text_field :four, placeholder: "" %>
-      <%#= f.text_field :five, placeholder: "" %>
-      <%#= f.text_field :six, placeholder: "" %>
-      <%#= f.text_field :seven, placeholder: "" %>
-      <%#= f.text_field :eight, placeholder: "" %>
-      <%#= f.text_field :nine, placeholder: "" %>
-      <%#= f.text_field :ten, placeholder: ""
-        
-      <%= f.submit "SEND" %>
+     <%= render "shared/footer" %>
     <% end %>
  </div>
 </div>
