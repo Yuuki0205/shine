@@ -19,9 +19,9 @@
   
 }
 .plays{
-  color: #fff;
+  color: gray;
   background: #FFF;
-  text-shadow: 0px 0px 2px #000, 2px 2px 3px #000;
+  /* text-shadow: 0px 0px 2px #000, 2px 2px 3px #000; */
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .play-one{
@@ -87,9 +87,11 @@
   font-size: 30px;
 }
 .title{
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   margin-top: 30px;
+  border-bottom: double 2px lightslategray;
+  color: #9F166A;
 }
 .play-btn-text{
   text-align: center;
@@ -116,7 +118,7 @@
     
     height: 70px;
     margin-top: 15px;
-  }
+  
    
    @keyframes fuwafuwa { 
     0% {
@@ -131,18 +133,18 @@
   }
 }
 .play-text{
-  margin: 30px;
+  margin: 5px;
   padding: 5px;
 }
 .text-info{
    /* border: thistle solid 4px;  */
   /* padding: 20px; */
-   margin-right: 40px;
+   
    margin-bottom: 30px;
   text-align: center; 
    top: 20px;
-   width: 30vw;
-
+   width: 60vw;
+  
    
   
   
@@ -150,6 +152,7 @@
 .text-name{
    border: lightgray solid 2px; 
    padding: 10px;
+   
 }
 
   

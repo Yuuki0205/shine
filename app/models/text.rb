@@ -12,8 +12,8 @@ class Text < ApplicationRecord
     validates :ten 
   end
 
-
   belongs_to :user
+  has_many :likes, dependent: :destroy
 end
 
 

@@ -23,7 +23,7 @@
 </div>
 
 <div class='item-contents'>
-    <h2 class='title'><span style="color:gold">!</span>夢が詰まった目標リスト<span style="color:gold">!</span></h2>
+    <h2 class='title'></span>夢が詰まった目標リスト一覧</h2>
    
     <ul class='text-lists'>
       
@@ -32,9 +32,12 @@
         <div class='goal'>
         <button type="submit" class='play-text'>目標詳細</button>
         <% end %>
+         <div id='text_<%= text.id %>'>
+        <%= render 'text', text: text %>
+        </div>
+    
         <%# このやり方もある <%= link_to '目標詳細', text_path(text.id), class: "subtitle" %>
       <li class='list'>
-         
         <%#= link_to text_path(text.id) do %>
         
         <div class='text-info'>
@@ -71,7 +74,6 @@
             </div>
             
         </div>
-        
         <%# end %>
       </li>
       </div>

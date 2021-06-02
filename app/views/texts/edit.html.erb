@@ -1,6 +1,7 @@
 
 <div class="contents-row">
   <div class="container">
+  <%= render "shared/header" %>
   <h2 class="text-sell-title">目標を10個入力やってみよう!😌</h2>
  <%= form_with model:@text, local: true do |f| %>
  <%= render 'shared/error_messages', model: f.object %>
@@ -107,4 +108,5 @@
       <%= f.submit "SEND" %>
     <% end %>
  </div>
+ <%= render "shared/footer" %>
 </div>

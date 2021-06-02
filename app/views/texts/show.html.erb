@@ -6,16 +6,17 @@
     <% if current_user.id == @text.user_id %>
     <%# 30行目のコメントアウトは、違いを復習できるように残しておきます%>
     <%# if user_signed_in? && current_user.id == @item.user_id %>
-    <%= link_to "リストの編集",  edit_text_path(@text.id), method: :get, class: "text-red-btn" %>
-    <p class="or-text">or</p>
-    <%= link_to "削除", text_path(@text.id), method: :delete, class:"text-destroy" %>
- 
+    <div class='li-des'>
+     <%= link_to "リストの編集",  edit_text_path(@text.id), method: :get, class: "text-red-btn" %>
+     <%# <p class="or-text">or</p> %>
+    <%= link_to "削除", text_path(@text.id), method: :delete,  class:"text-destroy" %>
+    </div>
     <% end %>
     <% end %>
     
-
+ <%# <td><%= link_to 'Destroy', text, method: :delete, data: { confirm: 'Are you sure?' }</td>  %>
     
-
+    
     <%# <div class="text-explain-box">
 
       <span><%= @text.user.nickname </span> %>
