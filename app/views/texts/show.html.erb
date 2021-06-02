@@ -9,7 +9,7 @@
     <div class='li-des'>
      <%= link_to "リストの編集",  edit_text_path(@text.id), method: :get, class: "text-red-btn" %>
      <%# <p class="or-text">or</p> %>
-    <%= link_to "削除", text_path(@text.id), method: :delete,  class:"text-destroy" %>
+    <%= link_to "削除", text_path(@text.id), method: :delete, data: {confirm: "本当に削除しますか？"},  class:"text-destroy" %>
     </div>
     <% end %>
     <% end %>
