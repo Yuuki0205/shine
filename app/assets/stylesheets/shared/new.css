@@ -1,0 +1,59 @@
+.all{
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  min-height: 100vh;
+}
+
+.registration{
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  text-decoration:underline double blue
+}
+
+
+
+/* ログイン用 */
+.rog{
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+.field{
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.actions{
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.apple{
+  padding: 20px;
+  margin-left: 20%;
+  
+}
+
+
+.apple-one{
+  /* width: 20%; */
+  /* position: absolute;    */
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  
+}
+
+@media (max-width: 750px) {
+  .apple-one {
+    position: absolute;
+    top: 15%;
+    right: 30px;
+  }
+}
+   
+

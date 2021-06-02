@@ -1,0 +1,22 @@
+         <% if user_signed_in? %>
+         <% if current_user.liked_by?(text.id) %>
+        <td>
+          <%= link_to destroy_like_path(text), class: "like-link", method: :DELETE, remote: true do %>
+          <i class="fa fa-heart unlike-btn"></i>
+          <% end %>
+          <%= text.likes.count %>
+        </td>
+        
+         <% else %> 
+        <td>
+        <%= link_to create_like_path(text), class: "like-link", method: :POST, remote: true do %> 
+        <i class="fa fa-heart like-btn"></i>
+        <% end %>
+        <%= text.likes.count %>
+        </td>
+         <% end %> 
+         <% end %> 
+        <%# <td><%= link_to 'Show', text</td>  %>
+        <%# <td><%= link_to 'Edit', edit_text_path(text)</td>  %>
+        <%# <td><%= link_to 'Destroy', text, method: :delete, data: { confirm: 'Are you sure?' }</td>  %>
+      
