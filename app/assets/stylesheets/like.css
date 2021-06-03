@@ -1,0 +1,16 @@
+.unlike-btn{
+  font-size: 30px;
+  color: pink;
+margin-top: 20px;
+}
+.like-btn{
+  font-size: 30px;
+  color: lightgray;
+  margin-top: 20px;
+}
+.like-link {
+text-decoration: none;
+font-size: 30px;
+padding: 10px;
+
+}

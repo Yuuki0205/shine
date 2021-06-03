@@ -1,0 +1,159 @@
+.all-index{
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  min-height: 100vh;
+}
+.top{
+  font-size: 70px;
+ text-align: center;
+ color: #fff;
+ background: #9F166A;
+ text-shadow: 0px 3px 0px #AAA, 0px 14px 10px rgba(0, 0, 0, 0.2), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.05);
+}
+.spend{
+  font-size: 30px;
+  background-color: lightblue;
+}
+.up{
+  margin-top: 10px;
+  text-align: center;
+  
+}
+.plays{
+  color: gray;
+  background: #FFF;
+  /* text-shadow: 0px 0px 2px #000, 2px 2px 3px #000; */
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.play-one{
+  
+  margin: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+    
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+    
+    height: 30px;
+    margin-top: 45px;
+  }
+   
+   @keyframes fuwafuwa { 
+    0% {
+      transform:translate(0, 0) rotate(-7deg);
+    }
+    50% {
+      transform:translate(0, -7px) rotate(0deg);
+    }
+    100% {
+      transform:translate(0, 0) rotate(7deg);
+    }
+  }
+  
+
+
+.play-two{
+  margin: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+.play-three{
+  margin: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+.play-four{
+  margin: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+.play-five{
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+.play-six{
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+.play-seven{
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+.title{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: double 2px lightslategray;
+  color: #9F166A;
+}
+.play-btn-text{
+  text-align: center;
+  
+}
+.text-lists{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+  padding: 30px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+.do-text{
+  font-size: 20px;
+  padding: 5px;
+  margin: 20px;
+  box-shadow: skyblue 2px 2px 40px;
+  
+    animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+    
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+    
+    height: 70px;
+    margin-top: 15px;
+  
+   
+   @keyframes fuwafuwa { 
+    0% {
+      transform:translate(0, 0) rotate(-7deg);
+    }
+    50% {
+      transform:translate(0, -7px) rotate(0deg);
+    }
+    100% {
+      transform:translate(0, 0) rotate(7deg);
+    }
+  }
+}
+.play-text{
+  margin: 5px;
+  padding: 5px;
+}
+.text-info{
+   /* border: thistle solid 4px;  */
+  /* padding: 20px; */
+   
+   margin-bottom: 30px;
+  text-align: center; 
+   top: 20px;
+   width: 60vw;
+  
+   
+  
+  
+}
+.text-name{
+   border: lightgray solid 2px; 
+   padding: 10px;
+   
+}
+
+  
+

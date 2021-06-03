@@ -1,0 +1,96 @@
+<div class="contents-row">
+<%= render "shared/header" %>
+  <div class="container">
+  <h2 class="text-sell-title">目標を10個入力やってみよう!😌</h2>
+ <%= form_with model:@text, local: true do |f| %>
+ <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="new-text">
+      <div class="weight-bold-text">
+         1つ目
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_field :one, class:"one-text", id:"one-name", placeholder:"" %>
+      <div class="new-text">
+        <div class="weight-bold-text">
+          2つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :two, class:"two-text", id:"two-name", placeholder:"" %>
+      </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          3つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :three, class:"three-text", id:"three-name", placeholder:"" %>
+      </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          4つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :four, class:"four-text", id:"four-name", placeholder:"" %>
+      </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          5つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :five, class:"five-text", id:"five-name", placeholder:"" %>
+      </div>
+      <div class="weight-text">
+          あと半分! その調子! 📣
+       </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          6つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :six, class:"six-text", id:"six-name", placeholder:"" %>
+      </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          7つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :seven, class:"seven-text", id:"seven-name", placeholder:"" %>
+      </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          8つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :eight, class:"eight-text", id:"eight-name", placeholder:"" %>
+      </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          9つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :nine, class:"nine-text", id:"nine-name", placeholder:"" %>
+      </div>
+       <div class="new-text">
+        <div class="weight-bold-text">
+          10つ目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :ten, class:"ten-text", id:"ten-name", placeholder:"" %>
+      </div>
+      <div class="talent">
+          やりきった! 天才だね! 😳
+       </div>
+       <div class="sell-btn-contents">
+      <%= f.submit "天才の人のみ押せるボタン" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+       
+    </div>
+     <%= render "shared/footer" %>
+    <% end %>
+ </div>
+</div>
+
+
+
+
