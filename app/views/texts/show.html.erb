@@ -21,7 +21,68 @@
 
       <span><%= @text.user.nickname </span> %>
     <%# </div> %> 
+   <div class='item-contents'>
+    <h2 class='title'></span>夢が詰まった目標リスト一覧</h2>
    
+    <ul class='text-lists'>
+       <% if current_user.id == @text.user_id %>
+       <% @texts.each do |text| %>
+       <% if current_user.id == text.user.id%>
+         <div id='text_<%= text.id %>'>
+        <%= render 'text', text: text %>
+        </div>
+        <table class="detail-table">
+      <tbody>
+       
+        <tr>
+          <th class="detail-item">1</th>
+          <td class="detail-value"><%= text.one %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">2</th>
+          <td class="detail-value"><%= text.two %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">3</th>
+          <td class="detail-value"><%= text.three %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">4</th>
+          <td class="detail-value"><%= text.four %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">5</th>
+          <td class="detail-value"><%= text.five %></td>
+        </tr>
+         <tr>
+          <th class="detail-item">6</th>
+          <td class="detail-value"><%= text.six %></td>
+        </tr>
+         <tr>
+          <th class="detail-item">7</th>
+          <td class="detail-value"><%= text.seven %></td>
+        </tr>
+         <tr>
+          <th class="detail-item">8</th>
+          <td class="detail-value"><%= text.eight %></td>
+        </tr>
+         <tr>
+          <th class="detail-item">9</th>
+          <td class="detail-value"><%= text.nine %></td>
+        </tr>
+         <tr>
+          <th class="detail-item">10</th>
+          <td class="detail-value"><%= text.ten %></td>
+        </tr>
+      </tbody>
+    </table>
+       <% end %>
+       <% end %>
+       <% end %>
+       
+    </ul>
+  </div>
+  <% if current_user.id != @text.user_id %>
     <table class="detail-table">
       <tbody>
        
@@ -67,7 +128,7 @@
         </tr>
       </tbody>
     </table>
-    
+    <% end %>
   <%= render "shared/footer" %>
   </div>
   </div>

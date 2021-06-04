@@ -21,6 +21,7 @@ class TextsController < ApplicationController
       end
   end
   def show
+    @texts = Text.all.order('created_at DESC')
   end
 
   def edit
