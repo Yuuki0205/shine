@@ -13,6 +13,7 @@
 ### Association
 
 - has_many :texts
+- has_many :likes
 
 
 # texts テーブル
@@ -33,8 +34,19 @@
 ### Association
 
 - belongs_to :user
+-has_many :likes
 
 
+## likes テーブル
 
+| Column        | Type       | Options                        |
+| --------      | ------     | -----------                    |  
+| user          | references |  null: false, foreign_key: true|
+| text          | references |  null: false, foreign_key: true|
+
+### Association
+
+- belongs_to :user
+- belongs_to :text
 
 
