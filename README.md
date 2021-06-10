@@ -68,6 +68,7 @@ password: 11111p
 # 編集した内容を更新できる
 [![Image from Gyazo](https://i.gyazo.com/122858c18406957abee269fb535c9e1f.gif)](https://gyazo.com/122858c18406957abee269fb535c9e1f)
 # 削除機能の実装
+[![Image from Gyazo](https://i.gyazo.com/3327dcee527ef08cc5a779a47d7bfb52.gif)](https://gyazo.com/3327dcee527ef08cc5a779a47d7bfb52)
 # 詳細表示機能の実装
 ### 投稿者以外のユーザーが目標詳細押した時
 [![Image from Gyazo](https://i.gyazo.com/b8c0174910c956be8e955b3d9d23c8ce.gif)](https://gyazo.com/b8c0174910c956be8e955b3d9d23c8ce)
